@@ -24,7 +24,7 @@ body {
 
 .header {
   height: 95vh; /* vh = viewport height */
-  background-image: linear-gradient(to right bottom, #7ed56fc6, #28b485c1),
+  background-image: linear-gradient(to right bottom, #dd3f3fc6, #28b485c1),
     url(../img/hero.jpg);
   background-size: cover;
   background-position: top;
@@ -57,7 +57,7 @@ body {
   color: #fff;
   text-transform: uppercase;
 
-  backface-visibility: hidden;
+  /* backface-visibility: hidden; */
   margin-bottom: 10px;
 }
 
@@ -66,6 +66,7 @@ body {
   font-size: 60px;
   font-weight: 400;
   letter-spacing: 35px;
+  padding-left: 5px;
 
   animation-name: moveInLeft;
   animation-duration: 3s;
@@ -127,14 +128,18 @@ body {
   text-decoration: none;
   padding: 15px 40px;
   display: inline-block;
+  border-radius: 100px;
+  transition: all .3s;
 }
 
 .btn:hover {
   transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .2); /* x | y | blur | color*/
 }
 
 .btn:active {
-  transform: translateY(-1px)
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
 }
 
 .btn-white {
