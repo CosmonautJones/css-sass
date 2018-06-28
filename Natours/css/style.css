@@ -50,11 +50,15 @@ body {
     -50%,
     -50%
   ); /* Shifts the child element 50% in realtion to the element itself. for absolute middle  */
+  text-align: center;
 }
 
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
+
+  backface-visibility: hidden;
+  margin-bottom: 10px;
 }
 
 .heading-primary-main {
@@ -115,4 +119,25 @@ body {
     opacity: 1;
     transform: translate(0);
   }
+}
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+.btn:active {
+  transform: translateY(-1px)
+}
+
+.btn-white {
+  background-color: #fff;
+  color: #777;
 }
