@@ -1,0 +1,18 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/* HTML = Root Level */
+html { 
+  font-size: 62.5%; 
+  /* This helps ensure to get an appropriate based on user's browsers font size */
+  /* This helps to easily convert all font sizes to responsiveness for all browsers while using 'rem' */
+}
+
+body {
+  box-sizing: border-box;
+}
